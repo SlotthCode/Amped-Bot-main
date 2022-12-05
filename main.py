@@ -3,7 +3,7 @@ from discord.ext import commands
 #from cogs.database import UserMySQLcommands, ServerMySQLcommands, GlobalDataMySQLcommands
 
 
-TOKEN = "MTA0OTE4MDU4MzYwNTA1MTQ0Mg.Gn38qA.kgOnBsODBvrGfmfpawJBZ_Q2ELLMuZsN5TyHbw"
+TOKEN = ""
 client = commands.Bot(command_prefix='.', intents=discord.Intents().all())
 
 async def load_extensions():
@@ -21,7 +21,7 @@ async def on_ready():
 async def main():
     async with client:
         await load_extensions()
-        await client.start('MTA0OTE4MDU4MzYwNTA1MTQ0Mg.Gn38qA.kgOnBsODBvrGfmfpawJBZ_Q2ELLMuZsN5TyHbw')
+        await client.start(token)
 
 
 if __name__ == "__main__":
